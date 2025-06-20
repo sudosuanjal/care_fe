@@ -138,7 +138,7 @@ export default function ResourceList({ facilityId }: { facilityId: string }) {
                     <TabsList className="inline-flex bg-gray-100 rounded-lg p-1 h-10 min-w-[200px]">
                       <TabsTrigger
                         value="outgoing"
-                        className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
+                        className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
                         onClick={() => updateQuery({ incoming: false })}
                         data-cy="tab-outgoing"
                       >
@@ -146,7 +146,7 @@ export default function ResourceList({ facilityId }: { facilityId: string }) {
                       </TabsTrigger>
                       <TabsTrigger
                         value="incoming"
-                        className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
+                        className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
                         onClick={() => updateQuery({ incoming: true })}
                         data-cy="tab-incoming"
                       >
@@ -161,14 +161,14 @@ export default function ResourceList({ facilityId }: { facilityId: string }) {
                   <TabsList className="inline-flex bg-gray-100 rounded-lg p-1 h-10 min-w-[200px]">
                     <TabsTrigger
                       value="active"
-                      className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
+                      className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
                       onClick={() => updateQuery({ status: "pending" })}
                     >
                       {t("active")}
                     </TabsTrigger>
                     <TabsTrigger
                       value="completed"
-                      className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
+                      className="flex-1 px-3 py-2 rounded-md text-sm font-medium transition-all text-center data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=active]:shadow-sm data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:text-gray-900"
                       onClick={() => updateQuery({ status: "completed" })}
                     >
                       {t("completed")}
